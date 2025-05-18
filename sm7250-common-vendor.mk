@@ -6,25 +6,17 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sm7250-common
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sm7250-common/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
-    vendor/motorola/sm7250-common/proprietary/product/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.motodisplay.xml \
     vendor/motorola/sm7250-common/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/motorola/sm7250-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-telephony.xml \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/vendor.qti.data.factory-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.data.factory-V2.0-java.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/vendor.qti.data.factory-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.data.factory-V2.1-java.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
-    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
+    vendor/motorola/sm7250-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
@@ -73,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
@@ -90,25 +81,22 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/permissions/com.motorola.camera2.content.ai.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera2.content.ai.xml \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/motorola/sm7250-common/proprietary/vendor/firmware/a619_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a619_gmu.bin \
     vendor/motorola/sm7250-common/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
@@ -154,9 +142,51 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 PRODUCT_PACKAGES += \
-    libaptXHD_encoder \
-    libaptX_encoder \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
+    libOpenCL \
+    libadreno_utils \
+    libc2d30_bltlib \
+    libdiag \
+    libgpudataproducer \
+    libgsl \
+    libllvm-glnext \
+    libllvm-qcom \
     btaudio_offload_if \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadm \
+    libadpcmdec \
+    libaudcal \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
+    liblistensoundmodel2 \
+    libmulawdec \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libqtigef \
+    com.qualcomm.qti.dpm.api@1.0-vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
@@ -165,22 +195,16 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
+    deviceInfoServiceModule \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    audio.bluetooth_qti.default \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.gnss@4.0-impl \
+    vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    vulkan.adreno \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
@@ -194,36 +218,24 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     lib-siputility \
     lib-uceservice \
-    libC2D2 \
-    libCB \
+    libGPQTEEC_vendor \
+    libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libI420colorconvert \
-    libOpenCL \
     libQSEEComAPI \
+    libQTEEConnector_vendor \
     libStDrvInt \
-    libVkLayer_q3dtools \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadreno_utils \
+    libadropbox \
     libadsp_default_listener \
     libadsprpc \
-    libaudcal \
-    libaudioalsa \
-    libaudioconfigstore \
-    libaudioparsers \
+    libasn1cper \
+    libasn1crt \
+    libasn1crtx \
     libbase64 \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
-    libbt-hidlclient \
     libbtnv \
-    libc2d30_bltlib \
     libcacertclient \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
+    libcdfw \
+    libcdfw_remote_api \
     libcdsp_default_listener \
     libcdsprpc \
     libcne \
@@ -231,166 +243,29 @@ PRODUCT_PACKAGES += \
     libcneoplookup \
     libconfigdb \
     libcpion \
-    libcvp_common \
-    libdiag \
-    libdrmfs \
-    libdrmtime \
-    libdsutils \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libgpudataproducer \
-    libgsl \
-    libidl \
-    libjnihelper \
-    libkeymasterdeviceutils \
-    liblistensoundmodel2 \
-    libllvm-glnext \
-    libllvm-qcom \
-    libmdmdetect \
-    libmdsprpc \
-    libminkdescriptor \
-    libminksocket \
-    libmm-color-convertor \
-    libmulawdec \
-    libnetmgr \
-    libnetmgr_common \
-    libnlnetmgr \
-    liboemcrypto \
-    libops \
-    libperipheral_client \
-    libqcbor \
-    libqcci_legacy \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
-    libqcrilFramework \
-    libqdi \
-    libqdp \
-    libqisl \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmi_legacy \
-    libqmiservices \
-    libqrtr \
-    libqtigef \
-    librcc \
-    libril-qc-logger \
-    librpmb \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdsprpc \
-    libsensorcal \
-    libsensorslog \
-    libsnsapi \
-    libsoc_helper \
-    libssc \
-    libssc_default_listener \
-    libssd \
-    libthermalclient \
-    libtime_genoff \
-    libtrustedapploader \
-    libtzdrmgenprov \
-    libvppclient \
-    libvpphcp \
-    libvpphvx \
-    libvpplibrary \
-    libvpptestutils \
-    libwms \
-    libwqe \
-    libxml \
-    qcrild_librilutils \
-    qtibus \
-    qtimutex \
-    vendor.qti.data.factory@2.0 \
-    vendor.qti.data.factory@2.1 \
-    vendor.qti.data.factory@2.2 \
-    vendor.qti.data.factory@2.3 \
-    vendor.qti.data.mwqem@1.0 \
-    vendor.qti.data.slm@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.data.cne.internal.api@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.data.lce@1.0 \
-    vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0-vendor \
-    vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.sensorscalibrate@1.0 \
-    vendor.qti.hardware.slmadapter@1.0 \
-    vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.factory@1.0 \
-    vendor.qti.ims.factory@1.1 \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
-    vendor.qti.imsrtpservice@3.0-service-Impl \
-    vendor.qti.imsrtpservice@3.0-vendor \
-    vendor.qti.latency@2.0 \
-    vendor.qti.latency@2.1 \
-    libadm \
-    libadpcmdec \
-    libdrc \
-    libsurround_3mic_proc \
-    com.qualcomm.qti.dpm.api@1.0-vendor \
-    deviceInfoServiceModule \
-    vendor.qti.gnss@4.0-impl \
-    vendor.qti.hardware.alarm@1.0-impl \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vendor.qti.hardware.servicetracker@1.2-impl \
-    libGPQTEEC_vendor \
-    libGPTEE_vendor \
-    libQTEEConnector_vendor \
-    libadropbox \
-    libaoa \
-    libasn1cper \
-    libasn1crt \
-    libasn1crtx \
-    libcdfw \
-    libcdfw_remote_api \
     libdataitems \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
     libdpps \
+    libdrmfs \
+    libdrmtime \
     libdsi_netctrl \
-    libgarden \
-    libgarden_haltests_e2e \
+    libdsutils \
+    libfastcvdsp_stub \
+    libfastcvopt \
     libgdtap \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
     libhexagon_nn_stub \
     libhta_hexagon_runtime \
+    libidl \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
+    libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
@@ -403,39 +278,93 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmcutback \
+    libmdmdetect \
+    libminkdescriptor \
+    libminksocket \
     libmotext_inf \
+    libnetmgr \
+    libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
+    libnlnetmgr \
+    liboemcrypto \
+    libops \
     libpdmapper \
     libpdnotifier \
+    libperipheral_client \
+    libqcbor \
     libqcc_file_agent \
+    libqcci_legacy \
     libqcmaputils \
+    libqcrilFramework \
     libqcrildatactl \
+    libqdi \
     libqdma_file_agent \
+    libqdp \
+    libqisl \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
     libqmi_csvt_srvc \
+    libqmi_encdec \
+    libqmi_legacy \
     libqmimotext \
+    libqmiservices \
+    libqrtr \
     libqseed3 \
     libqsocket \
     libqtikeymaster4 \
+    librcc \
     libril-qc-hal-qmi \
+    libril-qc-logger \
     libril-qc-ltedirectdisc \
     libril-qc-radioconfig \
     libril-qcril-hook-oem \
     librilqmiservices \
+    librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
+    libsdsprpc \
+    libsensorcal \
+    libsensorslog \
     libsettings \
     libslimclient \
+    libsnsapi \
+    libsoc_helper \
+    libssc \
+    libssc_default_listener \
+    libssd \
     libsystem_health_mon \
     libsystempioctl \
+    libthermalclient \
+    libtime_genoff \
     libtinyxml2_1 \
+    libtrustedapploader \
+    libvpphcp \
+    libvpphvx \
+    libvpplibrary \
+    libwms \
+    libwqe \
     libwvhidl \
+    libxml \
     libxtadapter \
     libxtwifi_server_protocol \
     libxtwifi_server_protocol_uri_v3 \
+    qcrild_librilutils \
+    qtibus \
+    qtimutex \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hta \
@@ -447,6 +376,12 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.qti.data.factory@2.0 \
+    vendor.qti.data.factory@2.1 \
+    vendor.qti.data.factory@2.2 \
+    vendor.qti.data.factory@2.3 \
+    vendor.qti.data.mwqem@1.0 \
+    vendor.qti.data.slm@1.0 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
@@ -456,9 +391,22 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.data.cne.internal.api@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
     vendor.qti.hardware.data.connection@1.0 \
     vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.dynamicdds@1.0 \
     vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.lce@1.0 \
+    vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.fm@1.0-vendor \
+    vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
@@ -488,8 +436,23 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.hardware.wifi.wifilearner@1.0 \
-    vendor.qti.hardware.wigig.netperftuner@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.qti.hardware.slmadapter@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.ims.callcapability@1.0 \
+    vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.factory@1.0 \
+    vendor.qti.ims.factory@1.1 \
+    vendor.qti.ims.rcsconfig@1.0 \
+    vendor.qti.ims.rcsconfig@1.1 \
+    vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.imsrtpservice@3.0-service-Impl \
+    vendor.qti.imsrtpservice@3.0-vendor \
+    vendor.qti.latency@2.0 \
+    vendor.qti.latency@2.1 \
     capi_v2_aptX_CLHDADV_Encoder \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     libapps_mem_heap \
@@ -505,62 +468,40 @@ PRODUCT_PACKAGES += \
     libscveT2T_skel \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
+    com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
+    libdpmctmgr \
+    libdpmfdmgr \
+    libdpmframework \
+    libdpmtcm \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@3.0 \
-    com.qualcomm.qti.ant@1.0 \
-    com.qualcomm.qti.dpm.api@1.0 \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
+    CACertService \
     CneApp \
     IWlanService \
-    TimeService \
+    PowerOffAlarm \
     QtiTelephonyService \
-    uceShimService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    tcmclient \
     com.qti.dpmframework \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
     dpmapi \
     moto-telephony \
     qcrilhook \
-    vendor.qti.data.factory-V1.0-java \
-    vendor.qti.data.factory-V2.0-java \
-    vendor.qti.data.factory-V2.1-java \
-    vendor.qti.data.factory-V2.2-java \
-    vendor.qti.data.factory-V2.3-java \
-    vendor.qti.data.mwqem-V1.0-java \
-    vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.capabilityconfigstore-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.1-java \
-    vendor.qti.hardware.data.dynamicdds-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.mwqemadapter-V1.0-java \
-    vendor.qti.ims.factory-V1.0-java \
-    vendor.qti.ims.factory-V1.1-java \
-    vendor.qti.latency-V2.0-java \
-    vendor.qti.latency-V2.1-java \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
+    c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
-    vendor.qti.hardware.servicetracker@1.2-service.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -569,8 +510,6 @@ PRODUCT_PACKAGES += \
     diag_mdlog \
     dpmQmiMgr \
     dspservice \
-    fm_qsoc_patches \
-    garden_app \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
@@ -581,14 +520,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.media.c2@1.0-service \
     ims_rtp_daemon \
     imsdatadaemon \
     imsqmidaemon \
     imsrcsd \
-    ipacm-diag \
-    irsc_util \
     loc_launcher \
     lowi-server \
     mlid \
@@ -611,9 +547,7 @@ PRODUCT_PACKAGES += \
     sscrpcd \
     tftp_server \
     thermal-engine \
-    time_daemon \
     vppservice \
-    wifilearner \
     xtra-daemon \
     dpmd
 
